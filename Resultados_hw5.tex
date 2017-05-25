@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{enumerate}
+
+\title{Resultados tarea 5: M\'etodos Computacionales}
+
+\author{Luisa Fernanda Rengifo Cajias}
+
+\date{25 de mayo de 2017}
+
+\begin{document}
+\maketitle
+
+\section{Carga de un circuito RC}
+En este ejercicio tenemos datos del comportamiento de la carga de un condensador en un circuito RC que tiene como fin \'ultimo determinar el valor de la resistencia (R) y el del capacitor (C) que mejor se ajusten al sistema en cuenti\'on. Esto se realiz\'o por medio deun método de estimaci\'on Bayesiana de par\'ametros con Monte Carlo.
+
+\subsection{Capacitancia (C)}
+
+\begin{figure}[H]
+\includegraphics[scale=0.7]{likelihood_C.pdf}
+\caption{Capacitancia en funci\'on de la funci\'on de verosimilitud}
+\centering
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.7]{histograma_C.pdf}
+\caption{Muestreo del valor de la capacitancia}
+\centering
+\end{figure}
+
+
+\subsection{Resistencia (R)}
+
+\begin{figure}[H]
+\includegraphics[scale=0.7]{likelihood_R.pdf}
+\caption{Resistencia en funci\'on de la funci\'on de verosimilitud}
+\centering
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.7]{histograma_R.pdf}
+\caption{Muestreo del valor de la resistencia}
+\centering
+\end{figure}
+
+\subsection{Carga en funci\'on del tiempo}
+
+\begin{figure}[H]
+\includegraphics[scale=0.7]{Carga.pdf}
+\caption{Datos experimentales y modelo con datos ideales obtenido}
+\centering
+\end{figure}
+
+\end{document}
